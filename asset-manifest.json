@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/salon/static/css/main.dc2a1caa.css",
-    "main.js": "/salon/static/js/main.f7c79fac.js",
+    "main.js": "/salon/static/js/main.39238bb3.js",
     "static/media/bg-salon.jpg": "/salon/static/media/bg-salon.8b2aae72154f1fe32eda.jpg",
     "static/media/manicure.jpeg": "/salon/static/media/manicure.79d836ce40cdfce310d5.jpeg",
     "static/media/pedicure.jpg": "/salon/static/media/pedicure.1a0fe18d8fd7f00e6eb7.jpg",
     "static/media/haircut.jpg": "/salon/static/media/haircut.07a175175750dcdd7d26.jpg",
     "index.html": "/salon/index.html",
     "main.dc2a1caa.css.map": "/salon/static/css/main.dc2a1caa.css.map",
-    "main.f7c79fac.js.map": "/salon/static/js/main.f7c79fac.js.map"
+    "main.39238bb3.js.map": "/salon/static/js/main.39238bb3.js.map"
   },
   "entrypoints": [
     "static/css/main.dc2a1caa.css",
-    "static/js/main.f7c79fac.js"
+    "static/js/main.39238bb3.js"
   ]
 }

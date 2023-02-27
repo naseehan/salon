@@ -1,38 +1,207 @@
-.App {
+/* ---------------Home--------------- */
+.heading{
+  margin: 26px;
+  text-align: center;
+}
+.home-image{
+  background-image: url("./images/bg-salon.jpg");
+  height: 615px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-image h1{
+  font-size: 40px;
+  font-weight: 700;
+  font-family: cursive;
+  margin-left: 36px;
+  display: grid;
+}
+.home-image a{
+  width: fit-content;
+}
+.home-image button{
+    margin-left: 36px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+    transition: all 0.25s ease;
+    border-radius: 40px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.home-image button:hover {
+  transform: translateY(-2px);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+.home-image span{
+  color: #fff;
+}
+.form{
+  display: grid;
+  justify-content: center;
+}
+label{
+  margin: 14px 0;
+}
+button{
+  margin-top: 2em;
+}
+.home-form{
+  height: 500px;
+  background-image: linear-gradient(to bottom, #6593A6, #CEECF2);
+}
+.home-form input, select{
+    width: 250px;
+    padding: 10px;
+    background-color: #f6f9fc;
+    border: 1px solid #c9bcbc;
+    border-radius: 5px;
+}
+.home-form button{
+    background-color: deepskyblue;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+    font-family: inherit;
+    border: none;
+}
+@media (max-width: 768px) {
+  .home-image{
+    height: 615px;
+  }
+  .home-image h1{
+    color: #fff;
+  }
+}
+
+/* ------------------------------services--------------------------- */
+.services{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.service{
+    width: 15%;
+    margin: 99px;
+}
+.service img{
+    width: 136px;
+    float: left;
+    margin-right: 10px;
+}
+.price{
+    font-size: 19px;
+    font-weight: 600;
+}
+@media (max-width: 768px){
+  .service{
+    width: 88%;
+    margin: 24px;
+  }
+
+}
+
+
+/* ----------------------------Reviews---------------------- */
+.reviews{
+    display: grid;
+    justify-content: center;
+    height: 480px;
+}
+.review1{
+    margin: 10px;
+    text-align: center;
+}
+.review1 img{
+  width: 30px;
+}
+.review1 p{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* --------------------------------login-------------------- */
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(79deg, #7439db, #c66fbc 48%,#f7944d );
+    height: 500px;
+}
+.loginHeading h1{
+  font-weight: 700;
+}
+.login-form input{
+    display: block;
+    margin: 10px;
+    width: 275px;
+    background: #f6f9fc;
+    padding: 13px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+.log{
+      width: 80px;
+      height: 40px;
+}
+.reg{
+    height: 43px;
+    width: 300px;
+}
+.login-form button{
+    margin-top: 20px;
+    border: none;
+    padding: 0.35em;
+    /* color: white; */
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* -----------------Register form------------- */
+
+/* ------------------footer------------------- */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
+  /* max-width: 1200px; */
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }

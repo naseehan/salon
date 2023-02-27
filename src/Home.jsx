@@ -1,40 +1,37 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import Home from './Home';
-import Services from './Services';
-import { BrowserRouter , Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar';
-import Reviews from './Reviews';
-import Login from './Login';
-import Register from './Register';
-import Footer from './Footer';
+import { useState } from 'react';
+import { ErrorMessage } from 'formik';
+import { Field } from 'formik';
+import { Formik } from 'formik';
+import * as Yup from 'yup';
 
-function App() {
+const validationSchema = Yup.object().shape({
+  date: Yup.date()
+    .required('Date is required'),
+  time: Yup.string()
+    .required('Time is required'),
+  service: Yup.string()
+    .required('Service is required'),
+});
 
-const [currentForm, setCurrentForm] = useState('login')
 
-const toggleForm = (formName) =>{
-  setCurrentForm(formName)
-}
+function Home(){
+
+
+    const [date, setDate] = useState('')
+    const [time, setTime] = useState('')
+    const [service, setService] = useState('')
+
+    function handleSubmit(values, actions) {
+        return(
+          alert("Successfully registered")
+        )
+    }
 
   return (
-    <BrowserRouter basename="">
     <div className="App">
       <div className='container'>
-
-<Navbar />
-
-<Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path='/reviews' element={<Reviews />} />
-          <Route path='/login' element={<Login onFormSwitch={toggleForm}/>} /> 
-          <Route path='/register' element={<Register onFormSwitch={toggleForm} />} /> 
-          
-</Routes> 
-
-<Footer />
-
 
 {/* navbar */}
 {/* 
@@ -58,17 +55,21 @@ const toggleForm = (formName) =>{
       <i className="fa-solid fa-user"></i>
     </form>
   </div>
-</nav>
+</nav> */}
 
 
 {/* store name */}
-{/* <div className="heading">
+<div className="heading">
   <h1>BELLA BEAUTY SALON</h1>
-</div> */}
+</div>
 
-
+<div className="home-image">
+  <h1>All for the sake of your <span>beauty</span>
+  </h1>
+  <a href="#home-form"><button>Book now</button></a>
+</div>
 {/* form for user */}
-       {/* <div className='submit-form'>
+      <div className='home-form' id='home-form'>
 
       
       <Formik
@@ -101,11 +102,10 @@ const toggleForm = (formName) =>{
          )}
          </Formik>
 
-      </div> */}
+      </div>
       </div>
     </div>
-    </BrowserRouter>
-  ); 
-}
+  );
+        }
 
-export default App;
+        export default Home;

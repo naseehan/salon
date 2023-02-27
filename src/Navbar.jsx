@@ -13,7 +13,7 @@ function Navbar() {
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
       <li className="nav-item active">
-        <a className="nav-link" href="/services">Services</a>
+        <a className="nav-link" href="/salon/services">Services</a>
       </li>
       
       <li className="nav-item active">

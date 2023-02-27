@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import './App.css';
 import Home from './Home';
 import Services from './Services';
@@ -11,16 +11,16 @@ import Footer from './Footer';
 
 function App() {
 
-const [currentForm, setCurrentForm] = useState('login')
+// const [currentForm, setCurrentForm] = useState('login')
 
-const toggleForm = (formName) =>{
-  setCurrentForm(formName)
-}
+// const toggleForm = (formName) =>{
+//   setCurrentForm(formName)
+// }
 
-  return (
-    <BrowserRouter basename="">
-    <div className="App">
-      <div className='container'>
+//   return (
+//     <BrowserRouter basename="">
+//     <div className="App">
+//       <div className='container'>
 
 <Navbar />
 
@@ -28,8 +28,8 @@ const toggleForm = (formName) =>{
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path='/reviews' element={<Reviews />} />
-          <Route path='/login' element={<Login onFormSwitch={toggleForm}/>} /> 
-          <Route path='/register' element={<Register onFormSwitch={toggleForm} />} /> 
+          <Route path='/login' element={<Login />} /> 
+          <Route path='/register' element={<Register  />} /> 
           
 </Routes> 
 
